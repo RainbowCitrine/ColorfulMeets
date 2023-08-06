@@ -30,7 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'smtp.sendgrid.net';
         $mail->SMTPAuth = true;
         $mail->Username = 'apikey';
-        $mail->Password = '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';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
         $mail->setFrom('ngoss@student.mtsac.edu', 'Noah Rainbow');
