@@ -1,0 +1,92 @@
+body {
+    /* Set a pastel rainbow linear gradient as the background */
+    background-image: linear-gradient(135deg, #f5b1aa, #ffdab9, #f0e68c, #98fb98, #87ceeb, #b0c4de, #dda0dd);
+    /* Ensure the background covers the entire viewport */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add animation */
+    animation: changeColors 30s infinite;
+}
+
+@keyframes changeColors {
+    0%, 100% {
+        background-image: linear-gradient(135deg, #f5b1aa, #ffdab9, #f0e68c, #98fb98, #87ceeb, #b0c4de, #dda0dd);
+    }
+    12.5% {
+        background-image: linear-gradient(135deg, #ffdab9, #f0e68c, #98fb98, #87ceeb, #b0c4de, #dda0dd, #f5b1aa);
+    }
+    25% {
+        background-image: linear-gradient(135deg, #f0e68c, #98fb98, #87ceeb, #b0c4de, #dda0dd, #f5b1aa, #ffdab9);
+    }
+    37.5% {
+        background-image: linear-gradient(135deg, #98fb98, #87ceeb, #b0c4de, #dda0dd, #f5b1aa, #ffdab9, #f0e68c);
+    }
+    50% {
+        background-image: linear-gradient(135deg, #87ceeb, #b0c4de, #dda0dd, #f5b1aa, #ffdab9, #f0e68c, #98fb98);
+    }
+    62.5% {
+        background-image: linear-gradient(135deg, #b0c4de, #dda0dd, #f5b1aa, #ffdab9, #f0e68c, #98fb98, #87ceeb);
+    }
+    75% {
+        background-image: linear-gradient(135deg, #dda0dd, #f5b1aa, #ffdab9, #f0e68c, #98fb98, #87ceeb, #b0c4de);
+    }
+    87.5% {
+        background-image: linear-gradient(135deg, #f5b1aa, #ffdab9, #f0e68c, #98fb98, #87ceeb, #b0c4de, #dda0dd);
+    }
+}
+
+.register {
+    background-color: rgba(210, 210, 210, 0.7); /* Lighter grayish transparent background */
+    padding: 30px; /* Increased padding to create more space */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px; /* Increased max-width to make the form wider */
+    width: 40%; /* Set the width to 90% to center the form on the page */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+.logo img {
+    max-width: 130px;
+    height: auto;
+}
+
+.registry {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+input, button {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+p{
+    text-align: center;
+    margin-top: 20px;
+}

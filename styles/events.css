@@ -1,0 +1,119 @@
+/* styles/events.css */
+body {
+  /* Set a pastel rainbow linear gradient as the background */
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ee9ca7, #ffdde1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* Ensure the background covers the entire viewport */
+    min-height: 100vh;
+    margin: 0;
+
+    justify-content: center;
+    align-items: center;
+  /* Add animation */
+}
+
+
+h1 {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    font-size: 50px;
+    -webkit-text-stroke: 1px #fff; 
+    width: fit-content;
+    margin: 50px; 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: anim 2s linear infinite;
+    background-color: #000;
+    text-align: center;
+  }
+  @keyframes anim{
+    to{
+        background-position: 320px;
+    }
+}
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 20px;
+    margin-bottom: 80x; /* Add more space between cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Adjust this value to make the event cards narrower */
+    margin: 0 auto; /* Center the event cards horizontally */
+    background-color: rgba(242, 242, 242, 0.6); /* Light grey with 60% opacity */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* White box shadow with 30% opacity */
+    padding: 30px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    margin-top: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .confirmation-message {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    display: none;
+  }
+
+  .background {
+    background-color: rgba(220, 220, 220, 0.6); /* Light greyish background with transparency */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    border-radius: 10px; /* Optional: Add rounded corners */
+    padding: 0.1px; /* Optional: Add padding to create some space around the text */
+    display: inline-block;
+    margin: 0 auto; /* Center the block */
+  }
+  .background-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; /* Add margin to move the cards down */
+
+  }
+  
