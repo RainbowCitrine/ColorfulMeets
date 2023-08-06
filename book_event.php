@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Content
         $mail->isHTML(false);
         $mail->Subject = 'Event Booking Confirmation';
-        $mail->Body = "Hello $name,\n\nThank you for booking the event: $eventTitle.\n\nYour booking has been confirmed.\n\nBest regards,\nYour Event Team";
+        $mail->Body = "Hello $name,\n\nThank you for booking the event: $eventTitle.\n\nYour booking has been confirmed.\n\nBest regards,\nColorful Meets";
 
         $mail->send();
 
